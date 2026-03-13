@@ -167,7 +167,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .logo span {
@@ -332,6 +334,11 @@ ul {
   margin-bottom: 1.2rem;
 }
 
+.hero-badge::before {
+  content: "✓";
+  font-weight: 700;
+}
+
 .hero-text h1 {
   font-size: clamp(2rem, 4.5vw, 3.2rem);
   font-weight: 800;
@@ -453,7 +460,7 @@ ul {
 
 .hero-service-item .icon {
   color: var(--yellow);
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   width: 20px;
   text-align: center;
 }
@@ -514,6 +521,13 @@ ul {
   color: var(--dark);
 }
 
+.usp-item::before {
+  content: "✓";
+  font-weight: 700;
+  color: var(--dark);
+  font-size: 0.95rem;
+}
+
 .usp-item .usp-icon {
   font-size: 1.1rem;
 }
@@ -567,12 +581,15 @@ ul {
 .service-icon {
   width: 60px;
   height: 60px;
-  background: rgba(245,197,24,0.15);
+  background: var(--mid);
+  color: var(--yellow);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.7rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   margin-bottom: 1.2rem;
 }
 
@@ -651,12 +668,15 @@ ul {
 .why-feature-icon {
   width: 48px;
   height: 48px;
-  background: rgba(245,197,24,0.15);
+  background: var(--mid);
+  color: var(--yellow);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
   flex-shrink: 0;
 }
 
@@ -780,12 +800,15 @@ ul {
 .contact-icon {
   width: 48px;
   height: 48px;
-  background: rgba(245,197,24,0.15);
+  background: var(--mid);
+  color: var(--yellow);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
   flex-shrink: 0;
 }
 
@@ -879,6 +902,8 @@ ul {
 
 .form-success .success-icon {
   font-size: 3rem;
+  font-weight: 700;
+  color: #2a9d2a;
   margin-bottom: 1rem;
 }
 
